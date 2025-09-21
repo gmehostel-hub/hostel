@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A clean, responsive landing page template for beginners to practice HTML & CSS." />
+    <title>Landing Page Starter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#" class="logo" aria-label="NimbusPay home">
+          <span class="logo-mark" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="g1" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#6366f1"/>
+                  <stop offset="1" stop-color="#22d3ee"/>
+                </linearGradient>
+              </defs>
+              <rect x="2" y="6" width="32" height="24" rx="8" fill="url(#g1)"/>
+              <path d="M10 18c0-3.314 2.686-6 6-6h8a4 4 0 1 1 0 8H14a4 4 0 0 1-4-4Z" fill="#0b1220" opacity=".25"/>
+              <circle cx="26" cy="18" r="3" fill="#fff" opacity=".9"/>
+            </svg>
+          </span>
+          <span class="logo-type">Nimbus<span>Pay</span></span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="nav-list">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#cta" class="btn btn-small">Get Started</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Accept payments globally in minutes</h1>
+          <p>NimbusPay helps startups and creators accept cards, UPI, and wallets with a single integration. Simple pricing, bank‑grade security, and fast payouts.</p>
+          <div class="hero-actions">
+            <a href="#cta" class="btn">Create a free account</a>
+            <a href="#features" class="btn btn-ghost">See how it works</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="mockup">
+            <div class="mockup-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="mockup-body">
+              <div class="placeholder-card"></div>
+              <div class="placeholder-card"></div>
+              <div class="placeholder-card"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brands" aria-label="Trusted by">
+      <div class="container brands-inner">
+        <p class="eyebrow">Trusted by 5,000+ growing businesses</p>
+        <ul class="brand-logos" aria-hidden="true">
+          <li class="brand">Acme Corp</li>
+          <li class="brand">PixelPeak</li>
+          <li class="brand">NovaLabs</li>
+          <li class="brand">SkyCart</li>
+          <li class="brand">BlueLeaf</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <header class="section-header">
+          <h2>Everything you need to start</h2>
+          <p>Practice layout, spacing, and visual hierarchy with simple, reusable components.</p>
+        </header>
+
+        <div class="grid features-grid">
+          <article class="card feature">
+            <div class="icon">⚡</div>
+            <h3>Instant Payouts</h3>
+            <p>Get your money faster with T+1 settlements and transparent reports.</p>
+          </article>
+          <article class="card feature">
+            <div class="icon">🌍</div>
+            <h3>Global Methods</h3>
+            <p>Cards, UPI, wallets and more—accept payments from anywhere.</p>
+          </article>
+          <article class="card feature">
+            <div class="icon">🔒</div>
+            <h3>Bank‑grade Security</h3>
+            <p>PCI‑DSS compliant with 3D Secure, risk scoring, and fraud monitoring.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="testimonials">
+      <div class="container">
+        <header class="section-header">
+          <h2>What founders are saying</h2>
+          <p>From first sale to scale, NimbusPay powers reliable payments for modern teams.</p>
+        </header>
+
+        <div class="grid testimonials-grid">
+          <blockquote class="card quote">
+            <p>“We went live in a day. Payouts are quick and support is stellar.”</p>
+            <footer>— Aisha Khan, CEO at SkyCart</footer>
+          </blockquote>
+          <blockquote class="card quote">
+            <p>“NimbusPay just works. Our checkout success rate improved immediately.”</p>
+            <footer>— Diego Ramos, CTO at NovaLabs</footer>
+          </blockquote>
+          <blockquote class="card quote">
+            <p>“International cards and UPI in one integration saved us weeks.”</p>
+            <footer>— Mira Kapoor, Product Lead at PixelPeak</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="container">
+        <header class="section-header">
+          <h2>Fair, simple pricing</h2>
+          <p>Start free. Transparent fees and plans that grow with you.</p>
+        </header>
+
+        <div class="pricing">
+          <div class="card plan">
+            <h3>Starter</h3>
+            <p class="price">$0<span>/mo</span></p>
+            <ul class="plan-features">
+              <li>2.9% + $0.30 per transaction</li>
+              <li>All payment methods</li>
+              <li>Email support</li>
+            </ul>
+            <a href="#cta" class="btn btn-block">Get Started</a>
+          </div>
+
+          <div class="card plan highlight">
+            <div class="badge">Popular</div>
+            <h3>Growth</h3>
+            <p class="price">$29<span>/mo</span></p>
+            <ul class="plan-features">
+              <li>Lower fees with volume</li>
+              <li>Advanced analytics</li>
+              <li>Priority support</li>
+            </ul>
+            <a href="#cta" class="btn btn-block">Upgrade to Growth</a>
+          </div>
+
+          <div class="card plan">
+            <h3>Scale</h3>
+            <p class="price">$99<span>/mo</span></p>
+            <ul class="plan-features">
+              <li>Enterprise features</li>
+              <li>Dedicated manager</li>
+              <li>Custom pricing</li>
+            </ul>
+            <a href="#cta" class="btn btn-block">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="cta">
+      <div class="container cta-inner">
+        <div>
+          <h2>Start accepting payments with NimbusPay</h2>
+          <p>Create your free account and go live in minutes—no credit card required.</p>
+        </div>
+        <a href="#" class="btn btn-inverse">Create free account</a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> NimbusPay. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

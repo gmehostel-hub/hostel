@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manoj T B • Portfolio</title>
+  <meta name="description" content="Portfolio of Manoj T B – Full Stack Developer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E💻%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="#home">MTB</a>
+      <nav class="nav" data-nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- Hero -->
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="eyebrow">Full Stack Developer</p>
+          <h1>Hi, I'm <span class="hl">Manoj T B</span></h1>
+          <p class="sub">I'm a passionate web developer who builds responsive and high‑performance applications using modern technologies. I enjoy turning ideas into functional, visually appealing solutions that make an impact.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#projects">View My Work</a>
+            <a class="btn ghost" href="#contact">Get In Touch</a>
+          </div>
+          <div class="socials">
+            <a href="https://linkedin.com/in/manoj-tb" target="_blank" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0zM8 8h4.8v2.2h.06c.67-1.2 2.3-2.46 4.74-2.46 5.07 0 6 3.34 6 7.68V24h-5V16.4c0-1.82-.03-4.16-2.54-4.16-2.54 0-2.93 1.99-2.93 4.03V24H8z"/></svg>
+            </a>
+            <a href="https://github.com/manojmanu03" target="_blank" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.98 5.25.98 11.52c0 4.86 3.15 8.98 7.51 10.43.55.1.75-.24.75-.53 0-.26-.01-1.12-.02-2.03-3.05.66-3.7-1.3-3.7-1.3-.5-1.27-1.23-1.61-1.23-1.61-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 .1.76-.76 1.96-1.41-2.44-.28-5.01-1.22-5.01-5.43 0-1.2.43-2.18 1.14-2.95-.11-.28-.49-1.42.11-2.96 0 0 .93-.3 3.05 1.13a10.6 10.6 0 0 1 5.56 0c2.12-1.44 3.05-1.13 3.05-1.13.6 1.54.22 2.68.11 2.96.71.77 1.14 1.75 1.14 2.95 0 4.22-2.58 5.14-5.03 5.41.78.68 1.01 1.3 1.01 2.55 0 1.84-.02 3.32-.02 3.77 0 .29.2.64.76.53a10.99 10.99 0 0 0 7.5-10.43C23.03 5.25 18.28.5 12 .5Z"/></svg>
+            </a>
+            <a href="mailto:manojtbmanu2@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 13.065 0 6V4l12 7 12-7v2z"/><path d="M0 6.5v13h24v-13l-12 7z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="avatar-ring">
+            <img src="assets/manoj.png" alt="Manoj T B avatar" />
+          </div>
+        </div>
+      </div>
+      <div class="bg-grid"></div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="section">
+      <div class="container">
+        <h2 class="section-title">Resume</h2>
+        <p class="muted" style="text-align:center;margin:0 0 14px">Download my latest resume as a PDF.</p>
+        <div class="cta-row" style="justify-content:center">
+          <a class="btn primary" href="assets/Manoj_TB_Resume.pdf" download>Download PDF</a>
+          <a class="btn ghost" href="https://drive.google.com/file/d/1ZxVrjXWSWPhzhUs5PpOURla9jK3vSrEc/view?usp=drive_link" target="_blank" rel="noopener">View on Google Drive</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <article class="card big">
+            <div class="card-head">
+              <span class="chip">Full‑Stack Engineer</span>
+            </div>
+            <img src="assets/manoj.png" alt="Manoj portrait" style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin:6px 0 8px;box-shadow:0 6px 18px rgba(0,0,0,.1)" />
+            <h3>Turning ideas into fast, elegant web apps.</h3>
+            <p>I design and build responsive, accessible interfaces and solid backends. My focus is clean UX, performance, and maintainable architecture.</p>
+            <ul class="stats">
+              <li><strong>10+</strong><span>Projects</span></li>
+              <li><strong>5+</strong><span>Workshops</span></li>
+              <li><strong>4+</strong><span>Teams</span></li>
+            </ul>
+            <div class="cta-row">
+              <a class="btn dark" href="https://drive.google.com/file/d/1ZxVrjXWSWPhzhUs5PpOURla9jK3vSrEc/view?usp=drive_link" target="_blank" rel="noopener">Download CV</a>
+              <a class="btn ghost" href="#contact">Contact Me</a>
+            </div>
+          </article>
+          <div class="features">
+            <article class="card feature">
+              <h4>Performance‑first</h4>
+              <p>Optimized, responsive UIs with clean, accessible code.</p>
+            </article>
+            <article class="card feature">
+              <h4>End‑to‑end</h4>
+              <p>From APIs to deployments on Render/Vercel with CI‑ready setup.</p>
+            </article>
+            <article class="card feature">
+              <h4>Frontend Development</h4>
+              <p>Creating responsive and interactive user interfaces with modern CSS and JS.</p>
+            </article>
+            <article class="card feature">
+              <h4>Backend Development</h4>
+              <p>Building robust server‑side applications and database‑driven APIs.</p>
+            </article>
+            <article class="card feature">
+              <h4>Full Stack Solutions</h4>
+              <p>End‑to‑end web application development from concept to deployment.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="skills-grid">
+          <article class="card list">
+            <h4>Programming Languages</h4>
+            <ul>
+              <li>C</li>
+              <li>C++</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+            </ul>
+          </article>
+          <article class="card list">
+            <h4>Web Technologies</h4>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Bootstrap</li>
+              <li>Tailwind</li>
+            </ul>
+          </article>
+          <article class="card list">
+            <h4>Tools & Platforms</h4>
+            <ul>
+              <li>Git & GitHub</li>
+              <li>Docker</li>
+              <li>Vite</li>
+              <li>VS Code</li>
+            </ul>
+          </article>
+          <article class="card list">
+            <h4>Databases</h4>
+            <ul>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+              <li>PostgreSQL</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="muted">Add your top projects here with screenshots, descriptions, and links to GitHub/Demos.</p>
+        <div class="projects-grid">
+          <article class="card project">
+            <h4>GMEBH – Hostel Management System</h4>
+            <p>Live hostel management system with authentication, room allocation, library, and analytics. Flask + MongoDB, deployed on Render.</p>
+            <img src="assets/gmebh.png" alt="GMEBH screenshot">
+            <div class="cta-row">
+              <a class="btn small" href="https://github.com/gmehostel-hub/GMEBH_website" target="_blank">GitHub</a>
+              <a class="btn small ghost" href="https://www.gmebh.info" target="_blank">Live Demo</a>
+            </div>
+          </article>
+          <article class="card project">
+            <h4>HomeX – Real Estate Management</h4>
+            <p>Role‑based real estate app with advanced filtering, responsive UI, and MongoDB storage.</p>
+            <img src="assets/homex.png" alt="HomeX screenshot">
+            <div class="cta-row">
+              <a class="btn small" href="https://github.com/manojmanu03/HomeX" target="_blank">GitHub</a>
+              <a class="btn small ghost" href="#" target="_blank">Live Demo</a>
+            </div>
+          </article>
+          <article class="card project">
+            <h4>CampusFit – Placement Readiness</h4>
+            <p>ML‑powered app for resume and readiness analysis. Flask backend with MongoDB and responsive frontend.</p>
+            <img src="assets/campusfit.png" alt="CampusFit screenshot">
+            <div class="cta-row">
+              <a class="btn small" href="https://github.com/manojmanu03/CampusFit" target="_blank">GitHub</a>
+              <a class="btn small ghost" href="https://campusfit-main.onrender.com/" target="_blank">Live Demo</a>
+            </div>
+          </article>
+          <article class="card project">
+            <h4>URLShield – Phishing URL Detector</h4>
+            <p>ML-based detector for suspicious links using structural features and SSL/TLS checks.</p>
+            <img src="assets/urlshield.png" alt="URLShield screenshot">
+            <div class="cta-row">
+              <a class="btn small" href="https://github.com/manojmanu03/Phishing_URL_detector" target="_blank">GitHub</a>
+              <a class="btn small ghost" href="https://urlshield-main.onrender.com/" target="_blank">Live Demo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="muted">Want to collaborate or have a project in mind? Let's talk.</p>
+        <form class="contact-form" data-contact>
+          <div class="grid" style="margin-bottom:10px">
+            <div class="card" style="padding:12px">
+              <strong>Email</strong>
+              <p class="muted" style="margin:6px 0 0"><a href="mailto:manojtbmanu2@gmail.com">manojtbmanu2@gmail.com</a></p>
+            </div>
+            <div class="card" style="padding:12px">
+              <strong>Phone</strong>
+              <p class="muted" style="margin:6px 0 0"><a href="tel:+918088028712">+91 80880 28712</a></p>
+            </div>
+          </div>
+          <div class="grid">
+            <input type="text" name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Email address" required />
+          </div>
+          <textarea name="message" rows="5" placeholder="Message" required></textarea>
+          <button class="btn primary" type="submit">Send Message</button>
+          <p class="form-status" aria-live="polite" data-status></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Manoj T B. All rights reserved.</p>
+      <a class="top" href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

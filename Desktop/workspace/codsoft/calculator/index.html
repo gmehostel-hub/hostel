@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="app__bar">
+      <h1 class="app__title">Calculator</h1>
+      <div class="app__actions">
+        <button id="themeToggle" class="btn btn--ghost chip" aria-label="Toggle theme" title="Toggle theme">mode</button>
+        <button id="historyToggle" class="btn btn--ghost" aria-label="Toggle history" title="Toggle history">History</button>
+      </div>
+    </header>
+
+    <div class="workarea">
+    <section class="calculator">
+      <div class="panel panel--display" aria-live="polite">
+        <div class="panel__inner">
+          <div id="miniDisplay" class="display__mini">0</div>
+          <div id="mainDisplay" class="display__main">0</div>
+        </div>
+        <svg class="wave" viewBox="0 0 600 60" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0,24 C120,64 240,-8 360,24 C440,46 520,38 600,20 L600,60 L0,60 Z"></path>
+        </svg>
+      </div>
+
+      <div class="keypad keypad--4" role="group" aria-label="Calculator keypad">
+        <button class="key key--ctrl" data-key="clear" title="Clear (C)">AC</button>
+        <button class="key key--ctrl" data-key="erase" title="Backspace (⌫)">⌫</button>
+        <button class="key key--ctrl" data-key="%" title="Percent (%)">%</button>
+        <button class="key key--op" data-key="/">÷</button>
+
+        <button class="key" data-key="7">7</button>
+        <button class="key" data-key="8">8</button>
+        <button class="key" data-key="9">9</button>
+        <button class="key key--op" data-key="*">×</button>
+
+        <button class="key" data-key="4">4</button>
+        <button class="key" data-key="5">5</button>
+        <button class="key" data-key="6">6</button>
+        <button class="key key--op" data-key="-">−</button>
+
+        <button class="key" data-key="1">1</button>
+        <button class="key" data-key="2">2</button>
+        <button class="key" data-key="3">3</button>
+        <button class="key key--op" data-key="+">+</button>
+        <button class="key key--eq key--eq-tall" data-key="=">=</button>
+
+        <button class="key key--zero" data-key="0">0</button>
+        <button class="key" data-key=".">.</button>
+      </div>
+    </section>
+
+    <aside id="historyPanel" class="history" aria-label="Calculation history" hidden>
+      <div class="history__header">
+        <h2>History</h2>
+        <button id="historyClear" class="btn btn--ghost" title="Clear history">Clear</button>
+      </div>
+      <ul id="historyList" class="history__list" aria-live="polite"></ul>
+    </aside>
+    </div>
+
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
